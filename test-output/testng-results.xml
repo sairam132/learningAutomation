@@ -14,36 +14,36 @@
       <![CDATA[Terminate Suiteconnection Done Sucessful]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-08-29T16:08:31 IST" name="Suite_FunctionalityTesting" finished-at="2024-08-29T16:08:31 IST" duration-ms="176">
+  <suite started-at="2024-09-03T16:48:32 IST" name="Suite_FunctionalityTesting" finished-at="2024-09-03T16:48:32 IST" duration-ms="162">
     <groups>
     </groups>
-    <test started-at="2024-08-29T16:08:31 IST" name="Test" finished-at="2024-08-29T16:08:31 IST" duration-ms="176">
+    <test started-at="2024-09-03T16:48:32 IST" name="Test" finished-at="2024-09-03T16:48:32 IST" duration-ms="162">
       <class name="com.myntrajio.RegisterTest.RegisterTest">
-        <test-method is-config="true" signature="getSuiteConnections()[pri:0, instance:com.myntrajio.RegisterTest.RegisterTest@451001e5]" started-at="2024-08-29T16:08:31 IST" name="getSuiteConnections" finished-at="2024-08-29T16:08:31 IST" duration-ms="107" status="PASS">
+        <test-method is-config="true" signature="getSuiteConnections()[pri:0, instance:com.myntrajio.RegisterTest.RegisterTest@451001e5]" started-at="2024-09-03T16:48:32 IST" name="getSuiteConnections" finished-at="2024-09-03T16:48:32 IST" duration-ms="23" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Get SuiteConnections Done Sucessful]]>
             </line>
           </reporter-output>
         </test-method> <!-- getSuiteConnections -->
-        <test-method is-config="true" signature="precondition()[pri:0, instance:com.myntrajio.RegisterTest.RegisterTest@451001e5]" started-at="2024-08-29T16:08:31 IST" name="precondition" finished-at="2024-08-29T16:08:31 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="precondition()[pri:0, instance:com.myntrajio.RegisterTest.RegisterTest@451001e5]" started-at="2024-09-03T16:48:32 IST" name="precondition" finished-at="2024-09-03T16:48:32 IST" duration-ms="2" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Precondition Done Sucessful]]>
             </line>
           </reporter-output>
         </test-method> <!-- precondition -->
-        <test-method is-config="true" signature="browserSetup(java.lang.String)[pri:0, instance:com.myntrajio.RegisterTest.RegisterTest@451001e5]" started-at="2024-08-29T16:08:31 IST" name="browserSetup" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1724927911463" status="FAIL">
+        <test-method is-config="true" signature="browserSetup(java.lang.String)[pri:0, instance:com.myntrajio.RegisterTest.RegisterTest@451001e5]" started-at="2024-09-03T16:48:32 IST" name="browserSetup" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1725362312760" status="FAIL">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
 Parameter 'browser' is required by BeforeClass on method browserSetup but has not been marked @Optional or defined
-in C:\Users\saira\eclipse-workspace\com.myntrajio\Suite_FunctionalityTesting.xml]]>
+in C:\Users\saira\git\repository\com.myntrajio\Suite_FunctionalityTesting.xml]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.TestNGException: 
 Parameter 'browser' is required by BeforeClass on method browserSetup but has not been marked @Optional or defined
-in C:\Users\saira\eclipse-workspace\com.myntrajio\Suite_FunctionalityTesting.xml
+in C:\Users\saira\git\repository\com.myntrajio\Suite_FunctionalityTesting.xml
 at org.testng.internal.Parameters.createParams(Parameters.java:267)
 at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
 at org.testng.internal.Parameters.createParameters(Parameters.java:684)
@@ -73,21 +73,21 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserSetup -->
-        <test-method is-config="true" signature="login()[pri:0, instance:com.myntrajio.RegisterTest.RegisterTest@451001e5]" started-at="2024-08-29T16:08:31 IST" name="login" finished-at="2024-08-29T16:08:31 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="login()[pri:0, instance:com.myntrajio.RegisterTest.RegisterTest@451001e5]" started-at="2024-09-03T16:48:32 IST" name="login" finished-at="2024-09-03T16:48:32 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="registerValidData()[pri:0, instance:com.myntrajio.RegisterTest.RegisterTest@451001e5]" started-at="2024-08-29T16:08:31 IST" name="registerValidData" finished-at="2024-08-29T16:08:31 IST" duration-ms="1" status="SKIP">
+        <test-method signature="registerValidData()[pri:0, instance:com.myntrajio.RegisterTest.RegisterTest@451001e5]" started-at="2024-09-03T16:48:32 IST" name="registerValidData" finished-at="2024-09-03T16:48:32 IST" duration-ms="1" status="SKIP">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
 Parameter 'browser' is required by BeforeClass on method browserSetup but has not been marked @Optional or defined
-in C:\Users\saira\eclipse-workspace\com.myntrajio\Suite_FunctionalityTesting.xml]]>
+in C:\Users\saira\git\repository\com.myntrajio\Suite_FunctionalityTesting.xml]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.TestNGException: 
 Parameter 'browser' is required by BeforeClass on method browserSetup but has not been marked @Optional or defined
-in C:\Users\saira\eclipse-workspace\com.myntrajio\Suite_FunctionalityTesting.xml
+in C:\Users\saira\git\repository\com.myntrajio\Suite_FunctionalityTesting.xml
 at org.testng.internal.Parameters.createParams(Parameters.java:267)
 at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
 at org.testng.internal.Parameters.createParameters(Parameters.java:684)
@@ -117,22 +117,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registerValidData -->
-        <test-method is-config="true" signature="Logout()[pri:0, instance:com.myntrajio.RegisterTest.RegisterTest@451001e5]" started-at="2024-08-29T16:08:31 IST" name="Logout" finished-at="2024-08-29T16:08:31 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="Logout()[pri:0, instance:com.myntrajio.RegisterTest.RegisterTest@451001e5]" started-at="2024-09-03T16:48:32 IST" name="Logout" finished-at="2024-09-03T16:48:32 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Logout -->
-        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.myntrajio.RegisterTest.RegisterTest@451001e5]" started-at="2024-08-29T16:08:31 IST" name="closebrowser" finished-at="2024-08-29T16:08:31 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.myntrajio.RegisterTest.RegisterTest@451001e5]" started-at="2024-09-03T16:48:32 IST" name="closebrowser" finished-at="2024-09-03T16:48:32 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closebrowser -->
-        <test-method is-config="true" signature="postcondition()[pri:0, instance:com.myntrajio.RegisterTest.RegisterTest@451001e5]" started-at="2024-08-29T16:08:31 IST" name="postcondition" finished-at="2024-08-29T16:08:31 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="postcondition()[pri:0, instance:com.myntrajio.RegisterTest.RegisterTest@451001e5]" started-at="2024-09-03T16:48:32 IST" name="postcondition" finished-at="2024-09-03T16:48:32 IST" duration-ms="2" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[postcondition Done Sucessful]]>
             </line>
           </reporter-output>
         </test-method> <!-- postcondition -->
-        <test-method is-config="true" signature="terminateSuiteconnection()[pri:0, instance:com.myntrajio.RegisterTest.RegisterTest@451001e5]" started-at="2024-08-29T16:08:31 IST" name="terminateSuiteconnection" finished-at="2024-08-29T16:08:31 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="terminateSuiteconnection()[pri:0, instance:com.myntrajio.RegisterTest.RegisterTest@451001e5]" started-at="2024-09-03T16:48:33 IST" name="terminateSuiteconnection" finished-at="2024-09-03T16:48:33 IST" duration-ms="7" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Terminate Suiteconnection Done Sucessful]]>

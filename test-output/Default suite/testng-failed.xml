@@ -3,19 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="RegisterTest.RegisterTest">
+      <class name="com.myntrajio.RegisterTest.RegisterTest">
         <methods>
-          <include name="registerValidData"/>
           <include name="precondition"/>
           <include name="closebrowser"/>
           <include name="login"/>
+          <include name="registerValidData"/>
           <include name="browserSetup"/>
           <include name="postcondition"/>
           <include name="terminateSuiteconnection"/>
           <include name="getSuiteConnections"/>
           <include name="Logout"/>
         </methods>
-      </class> <!-- RegisterTest.RegisterTest -->
+      </class> <!-- com.myntrajio.RegisterTest.RegisterTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -21,6 +21,8 @@ public class RegisterPage {
 	 private WebElement passwordtextfield;
 	@FindBy(id="mobile")
 	 private WebElement mobiletextfield; 
+	@FindBy(id="feedback")
+	private WebElement feedbacktextfield;
 	public WebElement getNametextfield() {
 		return nametextfield;
 	}
@@ -33,7 +35,9 @@ public class RegisterPage {
 	public WebElement getMobiletextfield() {
 		return mobiletextfield;
 	}
-	
+	public WebElement getfeedbacktextfield() {
+		return feedbacktextfield;
+	}
 
 }
 
