@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite_FunctionalityTesting]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" name="Suite_FunctionalityTesting(failed)">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="username" value="Ram"/>
     <classes>
       <class name="com.myntrajio.RegisterTest.RegisterTest">
         <methods>
           <include name="precondition"/>
           <include name="closebrowser"/>
-          <include name="login"/>
           <include name="registerValidData"/>
+          <include name="login"/>
           <include name="browserSetup"/>
           <include name="postcondition"/>
           <include name="terminateSuiteconnection"/>
@@ -17,5 +19,5 @@
         </methods>
       </class> <!-- com.myntrajio.RegisterTest.RegisterTest -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Suite_FunctionalityTesting(failed) -->
 </suite> <!-- Failed suite [Suite_FunctionalityTesting] -->

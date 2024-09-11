@@ -7,12 +7,12 @@
         <methods>
           <include name="precondition"/>
           <include name="closebrowser"/>
-          <include name="login"/>
           <include name="registerValidData"/>
+          <include name="login"/>
           <include name="browserSetup"/>
           <include name="postcondition"/>
-          <include name="terminateSuiteconnection"/>
           <include name="getSuiteConnections"/>
+          <include name="terminateSuiteconnection"/>
           <include name="Logout"/>
         </methods>
       </class> <!-- com.myntrajio.RegisterTest.RegisterTest -->

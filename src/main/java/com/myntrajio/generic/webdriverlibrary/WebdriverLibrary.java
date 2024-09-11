@@ -1,15 +1,9 @@
-
 package com.myntrajio.generic.webdriverlibrary;
 
-import java.io.File;
-import java.io.IOException;
 import java.time.Duration;
-import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -19,18 +13,19 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import com.myntrajio.generic.javalibrary.javaLibrary;
-import io.github.bonigarcia.wdm.WebDriverManager;
-/**
- * This class contains reusable methods to perform driver related operations
- * @author Ram
- * */
-public class WebdriverLibrary {
 
+import com.myntrajio.generic.common.FrameworkConstant;
+
+/***
+ * This class contains reusable methods to perform driver related operations*
+ * 
+ * @author Ram
+ */
+public class WebdriverLibrary implements FrameworkConstant {
 	public WebDriver driver;
-	public static WebDriver static_driver ;
-	 public Actions action;
-	 public Select select;
+	public static WebDriver static_driver;
+	public Actions action;
+	public Select select;
 
 	/**
 	 * This method launches specified browser
@@ -41,26 +36,22 @@ public class WebdriverLibrary {
 	public WebDriver launchBrowser(String browser) {
 		switch (browser) {
 		case "chrome":
-			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
+			static_driver = driver;
 			break;
 		case "firefox":
-			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
+			static_driver = driver;
 			break;
 		case "edge":
-			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();
+			static_driver = driver;
 			break;
 		default:
 			System.out.println("Invalid browser info");
 		}
 
 		return driver;
-	}
-	
-	public void clearData() {
-
 	}
 
 	/**
@@ -84,8 +75,8 @@ public class WebdriverLibrary {
 	 * 
 	 * @param time
 	 */
-	public void waitUntilElementFound(long time) {
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(time));
+	public void waitUntilElementFound() {
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(waitduration));
 	}
 
 	/**
@@ -95,9 +86,9 @@ public class WebdriverLibrary {
 	 * @param element
 	 * @return
 	 */
-	public void  explicitWait(long time, WebElement element) {
+	public void explicitWait(long time, WebElement element) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(time));
-		 wait.until(ExpectedConditions.visibilityOf(element));
+		wait.until(ExpectedConditions.visibilityOf(element));
 	}
 
 	/**
@@ -115,8 +106,7 @@ public class WebdriverLibrary {
 	 * 
 	 * @param element
 	 */
-	public void doubleClickOnElement(WebElement element) 
-	{
+	public void doubleClickOnElement(WebElement element) {
 		action = new Actions(driver);
 		action.doubleClick(element).perform();
 	}
@@ -210,10 +200,6 @@ public class WebdriverLibrary {
 		driver.switchTo().defaultContent();
 	}
 
-	 
- 
-
-	 
 	/**
 	 * This method captures the screenshot of the web page
 	 * 
@@ -222,20 +208,17 @@ public class WebdriverLibrary {
 	 * @param testName
 	 * @return
 	 */
-	
-	public File takeScreenshot(WebDriver driver, javaLibrary library, String testName) {
-		TakesScreenshot ts = (TakesScreenshot) driver;
-		File src = ts.getScreenshotAs(OutputType.FILE);
-		File dest = new File("./Screenshot/" + testName + "_" + library.getCurrentTime() + ".png");
-		try {
-			FileUtils.copyFile(src, dest);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
 
-		return dest;
-	}
-
+	/*
+	 * public File takeScreenshot(WebDriver driver, JavaLibrary jlib, String
+	 * testName) { TakesScreenshot ts = (TakesScreenshot) driver; File src =
+	 * ts.getScreenshotAs(OutputType.FILE); File dest = new File("./Screenshot/" +
+	 * testName + "_" + jlib.getCurrentTime() + ".png"); try {
+	 * FileUtils.copyFile(src, dest); } catch (IOException e) { e.printStackTrace();
+	 * }
+	 * 
+	 * return dest; }
+	 */
 	/**
 	 * This method is used to scroll till the specified element on the web page
 	 * 
@@ -262,19 +245,15 @@ public class WebdriverLibrary {
 	/**
 	 * This method is used to close current tab or window
 	 */
-
-
+	public void closeWindow() {
+		driver.close();
+	}
 
 	/**
 	 * This method is used to close all the opened tabs or windows
 	 */
 	public void quitAllWindows() {
 		driver.quit();
-	}
-
-	public void closewindow() {
-		// TODO Auto-generated method stub
-		driver.close();
 	}
 
 	/**

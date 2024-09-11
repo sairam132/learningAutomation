@@ -5,9 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Properties;
-
 import org.testng.Reporter;
-
 import com.myntrajio.generic.common.FrameworkConstant;
 
 public class ReadPropertyfile implements FrameworkConstant {
@@ -17,17 +15,17 @@ public class ReadPropertyfile implements FrameworkConstant {
 
 	public String readData(String key) {
 
-		// Converting physical File into Java Understandable Using FileInputStream
+		// 1.Converting physical File into Java Understandable Using FileInputStream
 		try {
 			fis = new FileInputStream(propertypath);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
 
-		// create an object for properties class
+		// 2.create an object for properties class
 		property = new Properties();
 
-		// load the property file
+		// 3.load the property file
 		try {
 			property.load(fis);
 		} catch (IOException e) {
@@ -44,7 +42,7 @@ public class ReadPropertyfile implements FrameworkConstant {
 		// enter the data
 		property.put(key, value);
 
-		// create instance for FILE output Stream
+		// create instance for FileOutputStream Class
 		try {
 			fos = new FileOutputStream(propertypath);
 		} catch (FileNotFoundException e) {
@@ -57,7 +55,6 @@ public class ReadPropertyfile implements FrameworkConstant {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-
 	}
 
 	public void displayData(String key) {

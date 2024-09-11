@@ -7,55 +7,91 @@ import org.testng.Reporter;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.Status;
 import com.myntrajio.generic.PageRepository.RegisterPage;
 import com.myntrajio.generic.common.BaseTest;
 @Listeners(com.myntrajio.generic.listenerlibrary.Listenerimplementation.class)
 public class RegisterTest extends BaseTest{
 		@Test
 		public void registerValidData() {
+			// create an test report
+			test=report.createTest("validate");
+			test = report.createTest("RegisterValidData");
 			String name= excellibrary.readData("Registerdetails", 1, 0);
 			String email= excellibrary.readData("Registerdetails", 1, 1);
 			String Password= excellibrary.readData("Registerdetails", 1, 2);
 			String mobileno= excellibrary.readData("Registerdetails", 1, 3);
 			String feedback= excellibrary.readData("Registerdetails", 1, 5);
-			//Wating statement
-       javalibrary.pause(5000);
-       
-       // provide implicit wait
-       webdriverlibrary.waitUntilElementFound(0);
-       String exptitle="LearningSelenium";
-       String actitle=webdriverlibrary.driver.getTitle();
-       System.out.println(actitle);
-       
-			// Step 1 :: Verify the RegisterPage
-			Assert.assertEquals(exptitle, actitle, "Verified Register PAge");
-			
-		 	// Step 3 :: Creating an Object for Register Page
-			RegisterPage regpage= new RegisterPage(webdriverlibrary.driver);
-			
-			boolean elementExpCondition=true;
-			boolean elementActualCondition=regpage.getNametextfield().isDisplayed();
-			
-			// Step 2 :: Verify the Element
-			Assert.assertEquals("elementexpCondition", "elementActualCondition", "Verified  NameTxtField Webelement -it is displayed");
+			test.log(Status.INFO,"data taken from excel file sucess");
+			// Waiting Statement
+			javalibrary.pause(5000);
 
-			// Step 4 :: Perform Action -- Clear
+			// Provide Implicitly Wait
+			webdriverlibrary.waitUntilElementFound();
+
+			String exptitle = "LearningSelenium";
+			String acttitle = webdriverlibrary.driver.getTitle();
+			System.out.println(acttitle);
+
+			// Step1:Verify the Register Page
+			Assert.assertEquals(exptitle, acttitle, "Verified Register Page");
+			test.log(Status.PASS,"verified-Title ,register page is displyed");
+
+			// Create an Object For Register Page
+			RegisterPage regpage = new RegisterPage(webdriverlibrary.driver);
+
+			boolean elementExpCondition = true;
+			boolean elementActualCondition = regpage.getNametextfield().isDisplayed();
+
+			// Step2:Verify The Element
+			Assert.assertEquals(elementExpCondition, elementActualCondition,"Verified NameTxtField Weblement -It Is Displayed");
+
+			// Step3:Perform Action--Clear
 			regpage.getNametextfield().clear();
-			// Step 5 :: Perform Action -- enter Name text field
+			test.log(Status.PASS,"verified-nameTextfield sucess");
+
+			// Step4:Perform Action--Enter Name
 			regpage.getNametextfield().sendKeys(name);
-			// Step 6 :: Perform Action -- Enter Email text field
+			test.log(Status.PASS,"entered-name sucess");
+
+			// Step5:Perform Action--Enter Email
 			regpage.getEmailtextfield().sendKeys(email);
-			// Step 7 :: Perform Action-- Enter PassWord text field
+			test.log(Status.PASS,"enter-email sucess");
+
+			// Step6:Perform Action--Enter Password
 			regpage.getPasswordtextfield().sendKeys(Password);
-			// Step 9 :: Perform Action-- Enter mobile text field
-			regpage.getMobiletextfield().sendKeys(mobileno);
-			// step10 :: perform Action --enter feedback in text field
+			test.log(Status.PASS,"enter password sucess");
+
+			// Step7:Perform Action--Enter MobileNo
+			regpage.getMobiletextfield().sendKeys("9154161162");
+			test.log(Status.PASS,"enter mobileno sucess");
+
+			// Step8:Perform Action--Enter Feedback
 			regpage.getfeedbacktextfield().sendKeys(feedback);
+			test.log(Status.PASS,"enter feedback sucess");
 
-			Reporter.log("Register with valid Data Sucess", true);
+			Reporter.log("Register With Valid Data Sucess", true);
+			
 		}
+		@Test
+		public void vaildRegisterButtonColor() {
+			// Create an test report
+			test = report.createTest("vaildRegisterButtonColor");
+			test.log(Status.PASS, "Validate vaildRegisterButtonColor sucess");
+		}
+
+		@Test
+		public void vaildRegisterButtonPostion() {
+			// Create an test report
+			test = report.createTest("vaildRegisterButtonPostion");
+			test.log(Status.PASS, "Validate vaildRegisterButtonPostion sucess");
+		}
+
+		@Test
+		public void vaildRegisterButtonSize() {
+			// Create an test report
+			test = report.createTest("vaildRegisterButtonSize");
+			test.log(Status.INFO, "Validate vaildRegisterButtonSize sucess");
+		}
+
 	}
-
-
-
-

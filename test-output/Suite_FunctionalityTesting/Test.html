@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Sep 03 16:48:32 IST 2024</td>
+<td>Started on:</td><td>Tue Sep 03 23:33:39 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (162 ms)</td>
+<tr><td>Total time:</td><td>23 seconds (23563 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,20 +76,25 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.myntrajio.RegisterTest.RegisterTest.browserSetup()'><b>browserSetup</b><br>Test class: com.myntrajio.RegisterTest.RegisterTest</td>
-<td><div><pre>org.testng.TestNGException: 
-Parameter &apos;browser&apos; is required by BeforeClass on method browserSetup but has not been marked @Optional or defined
-in C:\Users\saira\git\repository\com.myntrajio\Suite_FunctionalityTesting.xml
+<td title='com.myntrajio.RegisterTest.RegisterTest.browserSetup()'><b>browserSetup</b><br>Test class: com.myntrajio.RegisterTest.RegisterTest<br>Parameters: chrome, Ram</td>
+<td><div><pre>java.lang.NullPointerException: inStream parameter is null
+	at java.base/java.util.Objects.requireNonNull(Objects.java:246)
+	at java.base/java.util.Properties.load(Properties.java:408)
+	at com.myntrajio.generic.propertyfilelibrary.ReadPropertyfile.readData(ReadPropertyfile.java:30)
+	at com.myntrajio.generic.common.BaseTest.browserSetup(BaseTest.java:39)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1752461090", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1752461090'><pre>org.testng.TestNGException: 
-Parameter &apos;browser&apos; is required by BeforeClass on method browserSetup but has not been marked @Optional or defined
-in C:\Users\saira\git\repository\com.myntrajio\Suite_FunctionalityTesting.xml
-	at org.testng.internal.Parameters.createParams(Parameters.java:267)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace573958827", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace573958827'><pre>java.lang.NullPointerException: inStream parameter is null
+	at java.base/java.util.Objects.requireNonNull(Objects.java:246)
+	at java.base/java.util.Properties.load(Properties.java:408)
+	at com.myntrajio.generic.propertyfilelibrary.ReadPropertyfile.readData(ReadPropertyfile.java:30)
+	at com.myntrajio.generic.common.BaseTest.browserSetup(BaseTest.java:39)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
 	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
@@ -109,8 +114,8 @@ in C:\Users\saira\git\repository\com.myntrajio\Suite_FunctionalityTesting.xml
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>-1725362312</td>
-<td>com.myntrajio.RegisterTest.RegisterTest@451001e5</td></tr>
+<td>23</td>
+<td>com.myntrajio.RegisterTest.RegisterTest@273444fe</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
@@ -121,20 +126,20 @@ in C:\Users\saira\git\repository\com.myntrajio\Suite_FunctionalityTesting.xml
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='com.myntrajio.RegisterTest.RegisterTest.login()'><b>login</b><br>Test class: com.myntrajio.RegisterTest.RegisterTest</td>
+<td></td>
+<td>0</td>
+<td>com.myntrajio.RegisterTest.RegisterTest@273444fe</td></tr>
+<tr>
 <td title='com.myntrajio.RegisterTest.RegisterTest.Logout()'><b>Logout</b><br>Test class: com.myntrajio.RegisterTest.RegisterTest</td>
 <td></td>
 <td>0</td>
-<td>com.myntrajio.RegisterTest.RegisterTest@451001e5</td></tr>
+<td>com.myntrajio.RegisterTest.RegisterTest@273444fe</td></tr>
 <tr>
 <td title='com.myntrajio.RegisterTest.RegisterTest.closebrowser()'><b>closebrowser</b><br>Test class: com.myntrajio.RegisterTest.RegisterTest</td>
 <td></td>
 <td>0</td>
-<td>com.myntrajio.RegisterTest.RegisterTest@451001e5</td></tr>
-<tr>
-<td title='com.myntrajio.RegisterTest.RegisterTest.login()'><b>login</b><br>Test class: com.myntrajio.RegisterTest.RegisterTest</td>
-<td></td>
-<td>0</td>
-<td>com.myntrajio.RegisterTest.RegisterTest@451001e5</td></tr>
+<td>com.myntrajio.RegisterTest.RegisterTest@273444fe</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -146,19 +151,24 @@ in C:\Users\saira\git\repository\com.myntrajio\Suite_FunctionalityTesting.xml
 </tr>
 <tr>
 <td title='com.myntrajio.RegisterTest.RegisterTest.registerValidData()'><b>registerValidData</b><br>Test class: com.myntrajio.RegisterTest.RegisterTest</td>
-<td><div><pre>org.testng.TestNGException: 
-Parameter &apos;browser&apos; is required by BeforeClass on method browserSetup but has not been marked @Optional or defined
-in C:\Users\saira\git\repository\com.myntrajio\Suite_FunctionalityTesting.xml
+<td><div><pre>java.lang.NullPointerException: inStream parameter is null
+	at java.base/java.util.Objects.requireNonNull(Objects.java:246)
+	at java.base/java.util.Properties.load(Properties.java:408)
+	at com.myntrajio.generic.propertyfilelibrary.ReadPropertyfile.readData(ReadPropertyfile.java:30)
+	at com.myntrajio.generic.common.BaseTest.browserSetup(BaseTest.java:39)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1160649162", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1160649162'><pre>org.testng.TestNGException: 
-Parameter &apos;browser&apos; is required by BeforeClass on method browserSetup but has not been marked @Optional or defined
-in C:\Users\saira\git\repository\com.myntrajio\Suite_FunctionalityTesting.xml
-	at org.testng.internal.Parameters.createParams(Parameters.java:267)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1886567481", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1886567481'><pre>java.lang.NullPointerException: inStream parameter is null
+	at java.base/java.util.Objects.requireNonNull(Objects.java:246)
+	at java.base/java.util.Properties.load(Properties.java:408)
+	at com.myntrajio.generic.propertyfilelibrary.ReadPropertyfile.readData(ReadPropertyfile.java:30)
+	at com.myntrajio.generic.common.BaseTest.browserSetup(BaseTest.java:39)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
 	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
@@ -179,7 +189,7 @@ in C:\Users\saira\git\repository\com.myntrajio\Suite_FunctionalityTesting.xml
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>com.myntrajio.RegisterTest.RegisterTest@451001e5</td></tr>
+<td>com.myntrajio.RegisterTest.RegisterTest@273444fe</td></tr>
 </table><p>
 </body>
 </html>
