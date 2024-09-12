@@ -1,175 +1,205 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[ men product  added suscess]]>
+      <![CDATA[Get SuiteConnections Done Sucessful]]>
     </line>
     <line>
-      <![CDATA[ men product  added suscess]]>
+      <![CDATA[precondition Done Sucessful]]>
     </line>
     <line>
-      <![CDATA[men product  updated suscess]]>
+      <![CDATA[BrowserSetup: chrome Sucessful]]>
     </line>
     <line>
-      <![CDATA[ women product added  suscess]]>
+      <![CDATA[login Sucessful]]>
     </line>
     <line>
-      <![CDATA[ women product added suscess]]>
+      <![CDATA[Register With Valid Data Sucess]]>
     </line>
     <line>
-      <![CDATA[ women product updated  suscess]]>
+      <![CDATA[Logout Sucessful]]>
     </line>
     <line>
-      <![CDATA[ kid product added suscess]]>
+      <![CDATA[login Sucessful]]>
     </line>
     <line>
-      <![CDATA[ kid product added suscess]]>
+      <![CDATA[RegisterButtonColor Validated ]]>
     </line>
     <line>
-      <![CDATA[ kid product updated suscess]]>
+      <![CDATA[Logout Sucessful]]>
     </line>
     <line>
-      <![CDATA[product added Electronicsuscess]]>
+      <![CDATA[login Sucessful]]>
     </line>
     <line>
-      <![CDATA[product added Electronic suscess]]>
+      <![CDATA[RegisterButtonPositionValidated ]]>
     </line>
     <line>
-      <![CDATA[product updated Electronic suscess]]>
+      <![CDATA[Logout Sucessful]]>
+    </line>
+    <line>
+      <![CDATA[login Sucessful]]>
+    </line>
+    <line>
+      <![CDATA[RegisterButtonSize Validated ]]>
+    </line>
+    <line>
+      <![CDATA[Logout Sucessful]]>
+    </line>
+    <line>
+      <![CDATA[Closebrowser Sucessful]]>
+    </line>
+    <line>
+      <![CDATA[postcondition Done Sucessful]]>
+    </line>
+    <line>
+      <![CDATA[Terminate Suiteconnection Done Sucessful]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-09-11T17:15:18 IST" name="RegressionSuite" finished-at="2024-09-11T17:15:19 IST" duration-ms="843">
+  <suite started-at="2024-09-11T17:37:34 IST" name="Suite_FunctionalityTesting" finished-at="2024-09-11T17:38:36 IST" duration-ms="61087">
     <groups>
-      <group name="ST">
-        <method signature="MensProductTest.updateMensproduct()[pri:0, instance:com.myntrajio.MensProductTest.MensProductTest@7526515b]" name="updateMensproduct" class="com.myntrajio.MensProductTest.MensProductTest"/>
-        <method signature="WomensProductTest.updatewoproduct()[pri:0, instance:com.myntrajio.WomensProductTest.WomensProductTest@27406a17]" name="updatewoproduct" class="com.myntrajio.WomensProductTest.WomensProductTest"/>
-        <method signature="KidsProductTest.updateKidsproduct()[pri:0, instance:com.myntrajio.KidsProductTest.KidsProductTest@7188af83]" name="updateKidsproduct" class="com.myntrajio.KidsProductTest.KidsProductTest"/>
-        <method signature="ElectronicProductTest.updateproduct()[pri:0, instance:com.myntrajio.ElectronicProductTest.ElectronicProductTest@4a003cbe]" name="updateproduct" class="com.myntrajio.ElectronicProductTest.ElectronicProductTest"/>
-      </group> <!-- ST -->
-      <group name="RT">
-        <method signature="MensProductTest.addMensproduct()[pri:0, instance:com.myntrajio.MensProductTest.MensProductTest@7526515b]" name="addMensproduct" class="com.myntrajio.MensProductTest.MensProductTest"/>
-        <method signature="MensProductTest.removeMensproduct()[pri:0, instance:com.myntrajio.MensProductTest.MensProductTest@7526515b]" name="removeMensproduct" class="com.myntrajio.MensProductTest.MensProductTest"/>
-        <method signature="MensProductTest.updateMensproduct()[pri:0, instance:com.myntrajio.MensProductTest.MensProductTest@7526515b]" name="updateMensproduct" class="com.myntrajio.MensProductTest.MensProductTest"/>
-        <method signature="WomensProductTest.addwoproduct()[pri:0, instance:com.myntrajio.WomensProductTest.WomensProductTest@27406a17]" name="addwoproduct" class="com.myntrajio.WomensProductTest.WomensProductTest"/>
-        <method signature="WomensProductTest.removewoproduct()[pri:0, instance:com.myntrajio.WomensProductTest.WomensProductTest@27406a17]" name="removewoproduct" class="com.myntrajio.WomensProductTest.WomensProductTest"/>
-        <method signature="WomensProductTest.updatewoproduct()[pri:0, instance:com.myntrajio.WomensProductTest.WomensProductTest@27406a17]" name="updatewoproduct" class="com.myntrajio.WomensProductTest.WomensProductTest"/>
-        <method signature="KidsProductTest.addKidsproduct()[pri:0, instance:com.myntrajio.KidsProductTest.KidsProductTest@7188af83]" name="addKidsproduct" class="com.myntrajio.KidsProductTest.KidsProductTest"/>
-        <method signature="KidsProductTest.removeKidsproduct()[pri:0, instance:com.myntrajio.KidsProductTest.KidsProductTest@7188af83]" name="removeKidsproduct" class="com.myntrajio.KidsProductTest.KidsProductTest"/>
-        <method signature="KidsProductTest.updateKidsproduct()[pri:0, instance:com.myntrajio.KidsProductTest.KidsProductTest@7188af83]" name="updateKidsproduct" class="com.myntrajio.KidsProductTest.KidsProductTest"/>
-        <method signature="ElectronicProductTest.addproduct()[pri:0, instance:com.myntrajio.ElectronicProductTest.ElectronicProductTest@4a003cbe]" name="addproduct" class="com.myntrajio.ElectronicProductTest.ElectronicProductTest"/>
-        <method signature="ElectronicProductTest.removeproduct()[pri:0, instance:com.myntrajio.ElectronicProductTest.ElectronicProductTest@4a003cbe]" name="removeproduct" class="com.myntrajio.ElectronicProductTest.ElectronicProductTest"/>
-        <method signature="ElectronicProductTest.updateproduct()[pri:0, instance:com.myntrajio.ElectronicProductTest.ElectronicProductTest@4a003cbe]" name="updateproduct" class="com.myntrajio.ElectronicProductTest.ElectronicProductTest"/>
-      </group> <!-- RT -->
-      <group name="IT">
-        <method signature="MensProductTest.removeMensproduct()[pri:0, instance:com.myntrajio.MensProductTest.MensProductTest@7526515b]" name="removeMensproduct" class="com.myntrajio.MensProductTest.MensProductTest"/>
-        <method signature="WomensProductTest.removewoproduct()[pri:0, instance:com.myntrajio.WomensProductTest.WomensProductTest@27406a17]" name="removewoproduct" class="com.myntrajio.WomensProductTest.WomensProductTest"/>
-        <method signature="KidsProductTest.removeKidsproduct()[pri:0, instance:com.myntrajio.KidsProductTest.KidsProductTest@7188af83]" name="removeKidsproduct" class="com.myntrajio.KidsProductTest.KidsProductTest"/>
-        <method signature="ElectronicProductTest.removeproduct()[pri:0, instance:com.myntrajio.ElectronicProductTest.ElectronicProductTest@4a003cbe]" name="removeproduct" class="com.myntrajio.ElectronicProductTest.ElectronicProductTest"/>
-      </group> <!-- IT -->
-      <group name="FT">
-        <method signature="MensProductTest.addMensproduct()[pri:0, instance:com.myntrajio.MensProductTest.MensProductTest@7526515b]" name="addMensproduct" class="com.myntrajio.MensProductTest.MensProductTest"/>
-        <method signature="WomensProductTest.addwoproduct()[pri:0, instance:com.myntrajio.WomensProductTest.WomensProductTest@27406a17]" name="addwoproduct" class="com.myntrajio.WomensProductTest.WomensProductTest"/>
-        <method signature="KidsProductTest.addKidsproduct()[pri:0, instance:com.myntrajio.KidsProductTest.KidsProductTest@7188af83]" name="addKidsproduct" class="com.myntrajio.KidsProductTest.KidsProductTest"/>
-        <method signature="ElectronicProductTest.addproduct()[pri:0, instance:com.myntrajio.ElectronicProductTest.ElectronicProductTest@4a003cbe]" name="addproduct" class="com.myntrajio.ElectronicProductTest.ElectronicProductTest"/>
-      </group> <!-- FT -->
     </groups>
-    <test started-at="2024-09-11T17:15:18 IST" name="chromeTest" finished-at="2024-09-11T17:15:18 IST" duration-ms="253">
-      <class name="com.myntrajio.MensProductTest.MensProductTest">
-        <test-method signature="addMensproduct()[pri:0, instance:com.myntrajio.MensProductTest.MensProductTest@7526515b]" started-at="2024-09-11T17:15:18 IST" name="addMensproduct" finished-at="2024-09-11T17:15:18 IST" duration-ms="99" status="PASS">
+    <test started-at="2024-09-11T17:37:34 IST" name="Suite_FunctionalityTesting" finished-at="2024-09-11T17:38:36 IST" duration-ms="61087">
+      <class name="com.myntrajio.RegisterTest.RegisterTest">
+        <test-method is-config="true" signature="getSuiteConnections()[pri:0, instance:com.myntrajio.RegisterTest.RegisterTest@5032714f]" started-at="2024-09-11T17:37:34 IST" name="getSuiteConnections" finished-at="2024-09-11T17:37:34 IST" duration-ms="19" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[ men product  added suscess]]>
+              <![CDATA[Get SuiteConnections Done Sucessful]]>
             </line>
           </reporter-output>
-        </test-method> <!-- addMensproduct -->
-        <test-method signature="removeMensproduct()[pri:0, instance:com.myntrajio.MensProductTest.MensProductTest@7526515b]" started-at="2024-09-11T17:15:18 IST" name="removeMensproduct" finished-at="2024-09-11T17:15:18 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- getSuiteConnections -->
+        <test-method is-config="true" signature="precondition()[pri:0, instance:com.myntrajio.RegisterTest.RegisterTest@5032714f]" started-at="2024-09-11T17:37:34 IST" name="precondition" finished-at="2024-09-11T17:37:35 IST" duration-ms="498" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[ men product  added suscess]]>
+              <![CDATA[precondition Done Sucessful]]>
             </line>
           </reporter-output>
-        </test-method> <!-- removeMensproduct -->
-        <test-method signature="updateMensproduct()[pri:0, instance:com.myntrajio.MensProductTest.MensProductTest@7526515b]" started-at="2024-09-11T17:15:18 IST" name="updateMensproduct" finished-at="2024-09-11T17:15:18 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- precondition -->
+        <test-method is-config="true" signature="browserSetup(java.lang.String,java.lang.String)[pri:0, instance:com.myntrajio.RegisterTest.RegisterTest@5032714f]" started-at="2024-09-11T17:37:35 IST" name="browserSetup" finished-at="2024-09-11T17:38:16 IST" duration-ms="40961" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ram]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
             <line>
-              <![CDATA[men product  updated suscess]]>
+              <![CDATA[BrowserSetup: chrome Sucessful]]>
             </line>
           </reporter-output>
-        </test-method> <!-- updateMensproduct -->
-      </class> <!-- com.myntrajio.MensProductTest.MensProductTest -->
-      <class name="com.myntrajio.WomensProductTest.WomensProductTest">
-        <test-method signature="addwoproduct()[pri:0, instance:com.myntrajio.WomensProductTest.WomensProductTest@27406a17]" started-at="2024-09-11T17:15:18 IST" name="addwoproduct" finished-at="2024-09-11T17:15:18 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- browserSetup -->
+        <test-method is-config="true" signature="login()[pri:0, instance:com.myntrajio.RegisterTest.RegisterTest@5032714f]" started-at="2024-09-11T17:38:16 IST" name="login" finished-at="2024-09-11T17:38:16 IST" duration-ms="3" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[ women product added  suscess]]>
+              <![CDATA[login Sucessful]]>
             </line>
           </reporter-output>
-        </test-method> <!-- addwoproduct -->
-        <test-method signature="removewoproduct()[pri:0, instance:com.myntrajio.WomensProductTest.WomensProductTest@27406a17]" started-at="2024-09-11T17:15:18 IST" name="removewoproduct" finished-at="2024-09-11T17:15:18 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- login -->
+        <test-method signature="registerValidData()[pri:0, instance:com.myntrajio.RegisterTest.RegisterTest@5032714f]" started-at="2024-09-11T17:38:16 IST" name="registerValidData" finished-at="2024-09-11T17:38:29 IST" duration-ms="13057" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[ women product added suscess]]>
+              <![CDATA[Register With Valid Data Sucess]]>
             </line>
           </reporter-output>
-        </test-method> <!-- removewoproduct -->
-        <test-method signature="updatewoproduct()[pri:0, instance:com.myntrajio.WomensProductTest.WomensProductTest@27406a17]" started-at="2024-09-11T17:15:18 IST" name="updatewoproduct" finished-at="2024-09-11T17:15:18 IST" duration-ms="4" status="PASS">
+        </test-method> <!-- registerValidData -->
+        <test-method is-config="true" signature="Logout()[pri:0, instance:com.myntrajio.RegisterTest.RegisterTest@5032714f]" started-at="2024-09-11T17:38:29 IST" name="Logout" finished-at="2024-09-11T17:38:29 IST" duration-ms="1" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[ women product updated  suscess]]>
+              <![CDATA[Logout Sucessful]]>
             </line>
           </reporter-output>
-        </test-method> <!-- updatewoproduct -->
-      </class> <!-- com.myntrajio.WomensProductTest.WomensProductTest -->
-    </test> <!-- chromeTest -->
-    <test started-at="2024-09-11T17:15:19 IST" name="FirefoxTest" finished-at="2024-09-11T17:15:19 IST" duration-ms="27">
-      <class name="com.myntrajio.KidsProductTest.KidsProductTest">
-        <test-method signature="addKidsproduct()[pri:0, instance:com.myntrajio.KidsProductTest.KidsProductTest@7188af83]" started-at="2024-09-11T17:15:19 IST" name="addKidsproduct" finished-at="2024-09-11T17:15:19 IST" duration-ms="3" status="PASS">
+        </test-method> <!-- Logout -->
+        <test-method is-config="true" signature="login()[pri:0, instance:com.myntrajio.RegisterTest.RegisterTest@5032714f]" started-at="2024-09-11T17:38:29 IST" name="login" finished-at="2024-09-11T17:38:29 IST" duration-ms="1" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[ kid product added suscess]]>
+              <![CDATA[login Sucessful]]>
             </line>
           </reporter-output>
-        </test-method> <!-- addKidsproduct -->
-        <test-method signature="removeKidsproduct()[pri:0, instance:com.myntrajio.KidsProductTest.KidsProductTest@7188af83]" started-at="2024-09-11T17:15:19 IST" name="removeKidsproduct" finished-at="2024-09-11T17:15:19 IST" duration-ms="3" status="PASS">
+        </test-method> <!-- login -->
+        <test-method signature="validateRegisterButtonColor()[pri:0, instance:com.myntrajio.RegisterTest.RegisterTest@5032714f]" started-at="2024-09-11T17:38:29 IST" name="validateRegisterButtonColor" finished-at="2024-09-11T17:38:29 IST" duration-ms="4" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[ kid product added suscess]]>
+              <![CDATA[RegisterButtonColor Validated ]]>
             </line>
           </reporter-output>
-        </test-method> <!-- removeKidsproduct -->
-        <test-method signature="updateKidsproduct()[pri:0, instance:com.myntrajio.KidsProductTest.KidsProductTest@7188af83]" started-at="2024-09-11T17:15:19 IST" name="updateKidsproduct" finished-at="2024-09-11T17:15:19 IST" duration-ms="3" status="PASS">
+        </test-method> <!-- validateRegisterButtonColor -->
+        <test-method is-config="true" signature="Logout()[pri:0, instance:com.myntrajio.RegisterTest.RegisterTest@5032714f]" started-at="2024-09-11T17:38:29 IST" name="Logout" finished-at="2024-09-11T17:38:29 IST" duration-ms="1" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[ kid product updated suscess]]>
+              <![CDATA[Logout Sucessful]]>
             </line>
           </reporter-output>
-        </test-method> <!-- updateKidsproduct -->
-      </class> <!-- com.myntrajio.KidsProductTest.KidsProductTest -->
-    </test> <!-- FirefoxTest -->
-    <test started-at="2024-09-11T17:15:19 IST" name="EdgeTest" finished-at="2024-09-11T17:15:19 IST" duration-ms="54">
-      <class name="com.myntrajio.ElectronicProductTest.ElectronicProductTest">
-        <test-method signature="addproduct()[pri:0, instance:com.myntrajio.ElectronicProductTest.ElectronicProductTest@4a003cbe]" started-at="2024-09-11T17:15:19 IST" name="addproduct" finished-at="2024-09-11T17:15:19 IST" duration-ms="6" status="PASS">
+        </test-method> <!-- Logout -->
+        <test-method is-config="true" signature="login()[pri:0, instance:com.myntrajio.RegisterTest.RegisterTest@5032714f]" started-at="2024-09-11T17:38:29 IST" name="login" finished-at="2024-09-11T17:38:29 IST" duration-ms="1" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[product added Electronicsuscess]]>
+              <![CDATA[login Sucessful]]>
             </line>
           </reporter-output>
-        </test-method> <!-- addproduct -->
-        <test-method signature="removeproduct()[pri:0, instance:com.myntrajio.ElectronicProductTest.ElectronicProductTest@4a003cbe]" started-at="2024-09-11T17:15:19 IST" name="removeproduct" finished-at="2024-09-11T17:15:19 IST" duration-ms="13" status="PASS">
+        </test-method> <!-- login -->
+        <test-method signature="validateRegisterButtonPosition()[pri:0, instance:com.myntrajio.RegisterTest.RegisterTest@5032714f]" started-at="2024-09-11T17:38:29 IST" name="validateRegisterButtonPosition" finished-at="2024-09-11T17:38:29 IST" duration-ms="3" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[product added Electronic suscess]]>
+              <![CDATA[RegisterButtonPositionValidated ]]>
             </line>
           </reporter-output>
-        </test-method> <!-- removeproduct -->
-        <test-method signature="updateproduct()[pri:0, instance:com.myntrajio.ElectronicProductTest.ElectronicProductTest@4a003cbe]" started-at="2024-09-11T17:15:19 IST" name="updateproduct" finished-at="2024-09-11T17:15:19 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- validateRegisterButtonPosition -->
+        <test-method is-config="true" signature="Logout()[pri:0, instance:com.myntrajio.RegisterTest.RegisterTest@5032714f]" started-at="2024-09-11T17:38:29 IST" name="Logout" finished-at="2024-09-11T17:38:29 IST" duration-ms="0" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[product updated Electronic suscess]]>
+              <![CDATA[Logout Sucessful]]>
             </line>
           </reporter-output>
-        </test-method> <!-- updateproduct -->
-      </class> <!-- com.myntrajio.ElectronicProductTest.ElectronicProductTest -->
-    </test> <!-- EdgeTest -->
-  </suite> <!-- RegressionSuite -->
+        </test-method> <!-- Logout -->
+        <test-method is-config="true" signature="login()[pri:0, instance:com.myntrajio.RegisterTest.RegisterTest@5032714f]" started-at="2024-09-11T17:38:29 IST" name="login" finished-at="2024-09-11T17:38:29 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[login Sucessful]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="validateRegisterButtonSize()[pri:0, instance:com.myntrajio.RegisterTest.RegisterTest@5032714f]" started-at="2024-09-11T17:38:29 IST" name="validateRegisterButtonSize" finished-at="2024-09-11T17:38:29 IST" duration-ms="9" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[RegisterButtonSize Validated ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- validateRegisterButtonSize -->
+        <test-method is-config="true" signature="Logout()[pri:0, instance:com.myntrajio.RegisterTest.RegisterTest@5032714f]" started-at="2024-09-11T17:38:29 IST" name="Logout" finished-at="2024-09-11T17:38:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Logout Sucessful]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Logout -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.myntrajio.RegisterTest.RegisterTest@5032714f]" started-at="2024-09-11T17:38:29 IST" name="closebrowser" finished-at="2024-09-11T17:38:34 IST" duration-ms="4791" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Closebrowser Sucessful]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+        <test-method is-config="true" signature="postcondition()[pri:0, instance:com.myntrajio.RegisterTest.RegisterTest@5032714f]" started-at="2024-09-11T17:38:34 IST" name="postcondition" finished-at="2024-09-11T17:38:36 IST" duration-ms="1457" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[postcondition Done Sucessful]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- postcondition -->
+        <test-method is-config="true" signature="terminateSuiteconnection()[pri:0, instance:com.myntrajio.RegisterTest.RegisterTest@5032714f]" started-at="2024-09-11T17:38:36 IST" name="terminateSuiteconnection" finished-at="2024-09-11T17:38:36 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Terminate Suiteconnection Done Sucessful]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- terminateSuiteconnection -->
+      </class> <!-- com.myntrajio.RegisterTest.RegisterTest -->
+    </test> <!-- Suite_FunctionalityTesting -->
+  </suite> <!-- Suite_FunctionalityTesting -->
 </testng-results>
